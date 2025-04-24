@@ -1,0 +1,8 @@
+[submodule "scanner-workflows"]
+	path = scanner-workflows
+	url = https://github.com/purs3lab/scanner-workflows.git
+	branch = issta2025
+[submodule "runner/codeql-home/codeql-repo"]
+	path = runner/codeql-home/codeql-repo
+	url = https://github.com/purs3lab/codeql.git
+	branch = embedded
