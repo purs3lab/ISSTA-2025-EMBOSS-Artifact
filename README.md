@@ -1,22 +1,36 @@
 # #481 Finding 709 Defects in 258 Projects: An Experience Report on Applying CodeQL to Open-Source Embedded Software (Experience Paper)
 This artifact contains the GitHub workflows to run CodeQL on EMBOSS repositories in our dataset, the results of running CodeQL on these repositories, and our manual analysis of CodeQL results.
 
-## Getting started
-### Directory structure of artifact
+## 📦 Zenodo Artifact
+
+The complete artifact, including large CodeQL output files and survey data, is available at:
+
+👉 [https://doi.org/10.5281/zenodo.15200316](https://doi.org/10.5281/zenodo.15200316)  
+
+
+The following files are **only available on Zenodo**:
+- `OSSEmbeddedResults/`: SARIF output from running CodeQL on all EMBOSS repositories.
+- `SurveyReport.pdf`: Raw results of our developer survey.
+
+## 🗂️ Directory Structure
 ```
 .
 ├── issta2025-paper481.pdf  # Preprint of the paper
-├── OSSEmbeddedResults      # CodeQL results on EMBOSS repos
+├── OSSEmbeddedResults      # CodeQL results on EMBOSS repos (Only available on Zenodo)
 ├── README.md
 ├── runner                  # Docker image to set up a self-hosted runner
 │   ├── codeql-home
-│   │   └── codeql-repo     # Our customized CodeQL rules
+│   │   └── codeql-repo     # Our customized CodeQL rules (git submodule)
 │   └── Dockerfile
-├── scanner-workflows       # Workflows to run CodeQL on EMBOSS repos
-└── SurveyReport.pdf        # Raw survery results
+├── scanner-workflows       # Workflows to run CodeQL on EMBOSS repos (git submodule)
+└── SurveyReport.pdf        # Raw survery results (Only available on Zenodo)
 ```
-### Running CodeQL workflows
-scanner-workflows/.github/ contains GitHub workflows to run CodeQL on repositories in our dataset. To run these workflows, follow the steps here.
+
+
+## Getting started
+
+### ▶️ Running CodeQL workflows
+`scanner-workflows/.github/` contains GitHub workflows to run CodeQL on repositories in our dataset. To run these workflows, follow the steps here.
 
 #### Requirements
 A GitHub account and a x64 Linux machine with docker installed.
